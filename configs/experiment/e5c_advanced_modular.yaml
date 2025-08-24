@@ -1,0 +1,59 @@
+# configs/experiment/e5c_advanced_modular.yaml
+
+name: e5c_advanced_modular
+defaults:
+  - _self_
+
+evaluation:
+  max_per_dataset: 200
+  loglog_min_points: 3
+
+storage_axis:
+  models:
+    - "gpt2"
+    - "gpt2-medium"
+    - "gpt2-large"
+
+retrieval_axis:
+  model_for_retrieval: "gpt2-medium"
+  gammas:
+    gamma1: 1
+    gamma2: 2
+    gamma3: 3
+    gamma_inf: 1000
+  regimes:
+    gamma1: { method: direct, max_new_tokens: 64, temperature: 0.0, beams: 1 }
+    gamma2: { method: cot_short, max_new_tokens: 128, temperature: 0.0, beams: 1 }
+    gamma3: { method: self_consistency, max_new_tokens: 128, temperature: 0.7, top_p: 0.9, chains: 8 }
+    gamma_inf: { method: tot_beam, max_new_tokens: 256, temperature: 0.0, beams: 4 }
+
+dataset:
+  name: trivia_qa
+  hf_dataset: trivia_qa
+  hf_config: rc.nocontext
+  split: validation
+  question_field: question
+  answer_field: answer.value
+
+partitioning:
+  strategy: topic
+  classifier_model: "facebook/bart-large-mnli"
+  topics:
+    - "History and Geography"
+    - "Science and Technology"
+    - "Arts and Literature"
+    - "Sports and Entertainment"
+
+finetuning:
+  epochs: 1
+  lr: 2.0e-5
+  batch_size: 4
+  max_length: 512
+  max_train_samples_per_bucket: 5000
+  sample_sweep: [500, 1000, 2000, 5000]
+  clear_cache: true
+
+outputs:
+  dir: artifacts/results/exp5c
+  cache_dir: artifacts/checkpoints/exp5c_modular_models
+

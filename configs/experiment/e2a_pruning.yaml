@@ -1,0 +1,64 @@
+name: e2a_pruning
+
+model_groups:
+  mlm: [roberta-base, bert-base-cased, distilroberta-base]
+  ar: [gpt2, gpt2-medium, gpt2-large]
+
+pruning:
+  targets:
+    mlm: ${experiment.model_groups.mlm}
+    ar: ${experiment.model_groups.ar}
+  method: structured
+  schedule:
+    levels: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
+    order: auto
+  structured:
+    drop_attention_heads: true
+    drop_ffn_channels: true
+    drop_layers: false
+  saliency_metric: magnitude
+
+stage2_reuse: true
+
+stage2:
+  pm:
+    enabled: true
+    models: ${experiment.model_groups.mlm}
+    strategies: [topk_global, entropy_equalisation]
+    mask_rates: [0.2, 0.4, 0.6, 0.8] 
+    position_codec: auto
+    arithmetic_coder:
+      enabled: true
+      oracle_model: gpt2-large
+  vq:
+    enabled: true
+    models: ${experiment.model_groups.ar}
+    codebook_sizes: [256, 512, 1024, 2048] 
+    bottleneck:
+      layer_after: 6
+      shared_codebook: true
+      commitment_beta: 0.25
+    index_lm:
+      type: gru
+      layers: 1
+      hidden_size: 512
+      epochs: 2
+
+evaluation:
+  run_efficiency: true
+  run_fidelity: true
+  run_crumpled_paper: true
+
+recovery:
+  finetune_epochs: auto
+  lr: auto
+  scheduler: auto
+  warmup_ratio: auto
+
+replication:
+  seeds: auto
+  aggregate: mean_std
+
+outputs:
+  write_rd_curves: true
+  write_tables: true

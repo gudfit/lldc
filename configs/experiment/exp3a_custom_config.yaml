@@ -1,0 +1,17 @@
+name: exp3a_bert_distrobert_custom
+
+model_groups:
+  mlm: [bert-base-cased, distilroberta-base]
+  ar: [] 
+
+evaluation:
+  domain_samples:
+    wikitext-103: 10
+    tinystories: 100
+    mathematics: 200
+  reliability_thresholds: [0.0005, 0.001, 0.002, 0.005, 0.01, 0.1, 0.2, 0.3]
+  prompt_completion_split: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7]
+
+outputs:
+  results_dir: artifacts/results/exp3a_custom_run
+  plot_title_prefix: "Exp3a Custom Run:"

@@ -1,0 +1,68 @@
+{
+  "model": "Qwen/Qwen2-7B-Instruct",
+  "eps": 0.001,
+  "drop_if_floored_k": 2,
+  "weighted": true,
+  "conditional_gap": {
+    "gammas": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "deltas": [
+      0.17543859649122806,
+      0.03508771929824564,
+      0.017543859649122816
+    ],
+    "alpha_r": 2.1202420871714036,
+    "c": 0.1689499833449702,
+    "meta": {
+      "gamma1": {
+        "dropped": false,
+        "datasets_used": 4,
+        "floored_count": 0,
+        "agg_delta": 0.17543859649122806
+      },
+      "gamma2": {
+        "dropped": false,
+        "datasets_used": 4,
+        "floored_count": 1,
+        "agg_delta": 0.03508771929824564
+      },
+      "gamma3": {
+        "dropped": false,
+        "datasets_used": 4,
+        "floored_count": 1,
+        "agg_delta": 0.017543859649122816
+      }
+    }
+  },
+  "unconditional_loss": {
+    "gammas": [
+      1.0
+    ],
+    "losses": [
+      0.07749999999999993
+    ],
+    "alpha_r": null,
+    "c": null,
+    "meta": {
+      "gamma1": {
+        "dropped": false,
+        "datasets_used": 4,
+        "floored_count": 1,
+        "agg_loss": 0.07749999999999993
+      },
+      "gamma2": {
+        "dropped": true,
+        "datasets_used": 4,
+        "floored_count": 4
+      },
+      "gamma3": {
+        "dropped": true,
+        "datasets_used": 4,
+        "floored_count": 2
+      }
+    }
+  }
+}

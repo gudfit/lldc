@@ -1,0 +1,69 @@
+# configs/experiment/e5ab_modular_decomposition.yaml
+
+name: e5ab_modular_decomposition
+defaults:
+  - _self_
+
+evaluation:
+  max_per_dataset: 100
+  loglog_min_points: 3
+
+storage_axis:
+  betas: [0.05, 0.15, 0.3, 0.5, 1.5]
+  
+retrieval_axis:
+  model_beta_for_retrieval: 1.5
+  gammas:
+    gamma1: 1
+    gamma2: 2
+    gamma3: 3
+    gamma_inf: 1000
+  regimes:
+    gamma1:
+      method: direct
+      max_new_tokens: 64
+      temperature: 0.0
+      top_p: 1.0
+      beams: 1
+    gamma2:
+      method: cot_short
+      max_new_tokens: 128
+      temperature: 0.0
+      top_p: 1.0
+      beams: 1
+    gamma3:
+      method: self_consistency
+      max_new_tokens: 128
+      temperature: 0.7
+      top_p: 0.95
+      chains: 8
+    gamma_inf:
+      method: tot_beam
+      max_new_tokens: 256
+      temperature: 0.0
+      top_p: 1.0
+      beams: 4
+
+dataset:
+  name: trivia_mem
+  hf_dataset: nq_open
+  split: validation
+  question_field: question
+  answer_field: answer
+
+partitioning:
+  pos_tag_model: "en_core_web_sm"
+  buckets:
+    NOUN: ["NN", "NNS", "NNP", "NNPS"]
+    VERB: ["VB", "VBD", "VBG", "VBN", "VBP", "VBZ"]
+
+training:
+  epochs: 1
+  lr: 5.0e-5
+  batch_size: 4
+  max_length: 256
+  max_train_samples: 2000 
+
+outputs:
+  dir: artifacts/results/exp5ab
+  cache_dir: artifacts/checkpoints/exp5ab_modular_models

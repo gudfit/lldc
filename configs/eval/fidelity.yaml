@@ -1,0 +1,14 @@
+name: fidelity
+character_level:
+  enabled: true
+  use_levenshtein_when_lengths_differ: true
+chrf:
+  enabled: true
+  order: 6
+bertscore:
+  enabled: true
+  model_type: roberta-large
+  batch_size: auto
+token_level:
+  enabled: true
+  only_when_tokenizers_match: true

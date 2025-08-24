@@ -1,0 +1,28 @@
+name: wikitext-2
+source:
+  hf_dataset: wikitext
+  hf_config: wikitext-2-raw-v1
+  split_map:
+    train: train
+    valid: validation
+    test: test
+  streaming: false
+processing:
+  text_field: text
+  pack_sequences: true
+  max_length: 512
+  drop_remainder: true
+limits:
+  max_train_samples: 200000
+  max_eval_samples: 20000
+tokenizer:
+  name: auto
+  truncation: true
+  padding: false
+loader:
+  batch_size: auto
+  num_workers: ${compute.num_workers}
+stats:
+  compute_unigram_entropy: true
+  compute_ngram_entropy: [6]
+  compute_mi: true

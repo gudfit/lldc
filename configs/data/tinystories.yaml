@@ -1,0 +1,28 @@
+name: tinystories
+source:
+  hf_dataset: roneneldan/TinyStories
+  hf_config: null
+  split_map:
+    train: train
+    valid: validation
+    test: validation
+  streaming: false
+processing:
+  text_field: story
+  pack_sequences: true
+  max_length: 512
+  drop_remainder: true
+limits:
+  max_train_samples: null
+  max_eval_samples: null
+tokenizer:
+  name: auto
+  truncation: true
+  padding: false
+loader:
+  batch_size: auto
+  num_workers: ${compute.num_workers}
+stats:
+  compute_unigram_entropy: true
+  compute_ngram_entropy: [6]
+  compute_mi: true

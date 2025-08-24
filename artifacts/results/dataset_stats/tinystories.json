@@ -1,0 +1,22 @@
+{
+  "dataset": {
+    "name": "roneneldan/TinyStories",
+    "config": null,
+    "num_train_samples_used": 2119719,
+    "num_test_samples_used": 21990,
+    "total_test_set_chars": 19190318
+  },
+  "unigram": {
+    "entropy_bits_per_token": 9.601444391807698,
+    "avg_token_len_bytes": 4.095608693406874,
+    "entropy_bits_per_byte": 2.344326597231845
+  },
+  "ngram": {
+    "order_6": {
+      "bpc": 1.2236751617602797
+    }
+  },
+  "mutual_information": {
+    "adjacent_token_bits": 3.9104073882674752
+  }
+}

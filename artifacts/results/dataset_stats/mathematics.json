@@ -1,0 +1,22 @@
+{
+  "dataset": {
+    "name": "openai/gsm8k",
+    "config": "main",
+    "num_train_samples_used": 7473,
+    "num_test_samples_used": 1319,
+    "total_test_set_chars": 316390
+  },
+  "unigram": {
+    "entropy_bits_per_token": 10.217742646972662,
+    "avg_token_len_bytes": 4.211866091751069,
+    "entropy_bits_per_byte": 2.425941951712114
+  },
+  "ngram": {
+    "order_6": {
+      "bpc": 1.6399825244563588
+    }
+  },
+  "mutual_information": {
+    "adjacent_token_bits": 5.6297951263884105
+  }
+}

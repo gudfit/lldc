@@ -1,0 +1,82 @@
+name: e4a_decomposition
+defaults:
+  - _self_
+evaluation:
+  max_per_dataset: 10
+  p_conf: 0.9
+  loglog_min_points: 3
+storage_axis:
+  betas: [0.4, 1.0, 7.0, 34.0, 70.0]
+  models:
+    - EleutherAI/pythia-70m
+    - EleutherAI/pythia-160m
+    - EleutherAI/pythia-410m
+    - EleutherAI/pythia-1b
+    - EleutherAI/pythia-1.4b
+retrieval_axis:
+  gammas:
+    gamma1: 1
+    gamma2: 2
+    gamma3: 3
+    gamma_inf: 1000
+  regimes:
+    gamma1:
+      method: direct
+      max_new_tokens: 64
+      temperature: 0.0
+      top_p: 1.0
+      beams: 1
+      chains: 1
+      depth: 1
+    gamma2:
+      method: cot_short
+      max_new_tokens: 32
+      temperature: 0.0
+      top_p: 1.0
+      beams: 1
+      chains: 1
+      depth: 1
+    gamma3:
+      method: self_consistency
+      max_new_tokens: 64
+      temperature: 0.7
+      top_p: 0.95
+      beams: 1
+      chains: 20
+      depth: 1
+    gamma_inf:
+      method: tot_beam
+      max_new_tokens: 256
+      temperature: 0.0
+      top_p: 1.0
+      beams: 8
+      chains: 1
+      depth: 256
+datasets:
+  - name: trivia_mem
+    hf_dataset: nq_open
+    hf_config: null
+    split: test
+    question_field: question
+    answer_field: answer
+  - name: natural_q
+    hf_dataset: squad
+    hf_config: null
+    split: validation
+    question_field: question
+    answer_field: answers.text
+  - name: hotpot_bridge
+    hf_dataset: hotpot_qa
+    hf_config: distractor
+    split: validation
+    question_field: question
+    answer_field: answer
+  - name: gsm_hard
+    hf_dataset: openai/gsm8k
+    hf_config: main
+    split: test
+    question_field: question
+    answer_field: answer
+outputs:
+  dir: artifacts/results/exp4a
+

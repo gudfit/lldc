@@ -1,0 +1,62 @@
+{
+  "model": "Qwen/Qwen2-0.5B-Instruct",
+  "eps": 0.001,
+  "drop_if_floored_k": 2,
+  "weighted": true,
+  "conditional_gap": {
+    "gammas": [
+      1.0
+    ],
+    "deltas": [
+      0.09160305343511448
+    ],
+    "alpha_r": null,
+    "c": null,
+    "meta": {
+      "gamma1": {
+        "dropped": false,
+        "datasets_used": 4,
+        "floored_count": 1,
+        "agg_delta": 0.09160305343511448
+      },
+      "gamma2": {
+        "dropped": true,
+        "datasets_used": 4,
+        "floored_count": 4
+      },
+      "gamma3": {
+        "dropped": true,
+        "datasets_used": 4,
+        "floored_count": 2
+      }
+    }
+  },
+  "unconditional_loss": {
+    "gammas": [
+      3.0
+    ],
+    "losses": [
+      0.01499999999999993
+    ],
+    "alpha_r": null,
+    "c": null,
+    "meta": {
+      "gamma1": {
+        "dropped": true,
+        "datasets_used": 4,
+        "floored_count": 2
+      },
+      "gamma2": {
+        "dropped": true,
+        "datasets_used": 4,
+        "floored_count": 4
+      },
+      "gamma3": {
+        "dropped": false,
+        "datasets_used": 4,
+        "floored_count": 1,
+        "agg_loss": 0.01499999999999993
+      }
+    }
+  }
+}

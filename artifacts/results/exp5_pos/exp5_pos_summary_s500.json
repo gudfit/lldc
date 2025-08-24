@@ -1,0 +1,66 @@
+{
+  "sample_count": 500,
+  "experiment_5a": {
+    "storage_loss_vs_beta": [
+      {
+        "model": "gpt2",
+        "beta_b_total": 0.372,
+        "beta_b_per_channel": 0.124,
+        "loss": 0.46399999999999997,
+        "stored_item_count": 268,
+        "eval_count": 500
+      },
+      {
+        "model": "gpt2-medium",
+        "beta_b_total": 1.065,
+        "beta_b_per_channel": 0.355,
+        "loss": 0.30800000000000005,
+        "stored_item_count": 346,
+        "eval_count": 500
+      },
+      {
+        "model": "gpt2-large",
+        "beta_b_total": 2.322,
+        "beta_b_per_channel": 0.774,
+        "loss": 0.12,
+        "stored_item_count": 440,
+        "eval_count": 500
+      }
+    ],
+    "alpha_s_mod": 0.718766014210677,
+    "c_s_mod": 0.2527741737878682
+  },
+  "experiment_5b": {
+    "retrieval_loss_vs_gamma": [
+      {
+        "regime": "gamma1",
+        "gamma_measured": 8.0,
+        "avg_new_tokens": 8.0,
+        "avg_fanout": 1.0,
+        "loss": 0.7863636363636364,
+        "eval_count": 440,
+        "known_items": 440
+      },
+      {
+        "regime": "gamma2",
+        "gamma_measured": 64.0,
+        "avg_new_tokens": 64.0,
+        "avg_fanout": 1.0,
+        "loss": 0.8818181818181818,
+        "eval_count": 440,
+        "known_items": 440
+      },
+      {
+        "regime": "gamma3",
+        "gamma_measured": 512.0,
+        "avg_new_tokens": 16.0,
+        "avg_fanout": 32.0,
+        "loss": 0.6363636363636364,
+        "eval_count": 440,
+        "known_items": 440
+      }
+    ],
+    "alpha_r_mod": 0.05089086844862638,
+    "c_r_mod": 0.9407784114880938
+  }
+}

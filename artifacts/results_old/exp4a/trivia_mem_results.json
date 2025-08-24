@@ -1,0 +1,203 @@
+{
+  "storage": {
+    "gpt2": {
+      "stored_frac": 0.4,
+      "loss": 0.6,
+      "N": 50
+    },
+    "gpt2-medium": {
+      "stored_frac": 0.45999999999999996,
+      "loss": 0.54,
+      "N": 50
+    },
+    "gpt2-large": {
+      "stored_frac": 0.5,
+      "loss": 0.5,
+      "N": 50
+    },
+    "EleutherAI/pythia-410m": {
+      "stored_frac": 0.38,
+      "loss": 0.62,
+      "N": 50
+    },
+    "EleutherAI/gpt-neo-2.7B": {
+      "stored_frac": 0.52,
+      "loss": 0.48,
+      "N": 50
+    }
+  },
+  "retrieval": {
+    "gpt2": {
+      "gamma1": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.4,
+        "storage_loss": 0.6,
+        "N": 50
+      },
+      "gamma2": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.4,
+        "storage_loss": 0.6,
+        "N": 50
+      },
+      "gamma3": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.4,
+        "storage_loss": 0.6,
+        "N": 50
+      },
+      "gamma_inf": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.4,
+        "storage_loss": 0.6,
+        "N": 50
+      }
+    },
+    "gpt2-medium": {
+      "gamma1": {
+        "success_frac": 0.020000000000000018,
+        "total_loss": 0.98,
+        "retrieval_loss": 0.43999999999999995,
+        "storage_loss": 0.54,
+        "N": 50
+      },
+      "gamma2": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.45999999999999996,
+        "storage_loss": 0.54,
+        "N": 50
+      },
+      "gamma3": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.45999999999999996,
+        "storage_loss": 0.54,
+        "N": 50
+      },
+      "gamma_inf": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.45999999999999996,
+        "storage_loss": 0.54,
+        "N": 50
+      }
+    },
+    "gpt2-large": {
+      "gamma1": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.5,
+        "storage_loss": 0.5,
+        "N": 50
+      },
+      "gamma2": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.5,
+        "storage_loss": 0.5,
+        "N": 50
+      },
+      "gamma3": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.5,
+        "storage_loss": 0.5,
+        "N": 50
+      },
+      "gamma_inf": {
+        "success_frac": 0.020000000000000018,
+        "total_loss": 0.98,
+        "retrieval_loss": 0.48,
+        "storage_loss": 0.5,
+        "N": 50
+      }
+    },
+    "EleutherAI/pythia-410m": {
+      "gamma1": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.38,
+        "storage_loss": 0.62,
+        "N": 50
+      },
+      "gamma2": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.38,
+        "storage_loss": 0.62,
+        "N": 50
+      },
+      "gamma3": {
+        "success_frac": 0.020000000000000018,
+        "total_loss": 0.98,
+        "retrieval_loss": 0.36,
+        "storage_loss": 0.62,
+        "N": 50
+      },
+      "gamma_inf": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.38,
+        "storage_loss": 0.62,
+        "N": 50
+      }
+    },
+    "EleutherAI/gpt-neo-2.7B": {
+      "gamma1": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.52,
+        "storage_loss": 0.48,
+        "N": 50
+      },
+      "gamma2": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.52,
+        "storage_loss": 0.48,
+        "N": 50
+      },
+      "gamma3": {
+        "success_frac": 0.020000000000000018,
+        "total_loss": 0.98,
+        "retrieval_loss": 0.5,
+        "storage_loss": 0.48,
+        "N": 50
+      },
+      "gamma_inf": {
+        "success_frac": 0.020000000000000018,
+        "total_loss": 0.98,
+        "retrieval_loss": 0.5,
+        "storage_loss": 0.48,
+        "N": 50
+      }
+    }
+  },
+  "storage_betas": [
+    {
+      "beta": 0.4,
+      "loss": 0.6
+    },
+    {
+      "beta": 1.0,
+      "loss": 0.54
+    },
+    {
+      "beta": 7.0,
+      "loss": 0.5
+    },
+    {
+      "beta": 34.0,
+      "loss": 0.62
+    },
+    {
+      "beta": 70.0,
+      "loss": 0.48
+    }
+  ]
+}

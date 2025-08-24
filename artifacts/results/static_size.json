@@ -1,0 +1,8 @@
+{
+  "static_bits_total": 2328044905296,
+  "breakdown": {
+    "model_bits": 2328044905296,
+    "codebook_bits": 0,
+    "gru_bits": 0
+  }
+}

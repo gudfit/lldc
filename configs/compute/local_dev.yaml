@@ -1,0 +1,19 @@
+name: local_dev
+hardware:
+  n_gpus: 1
+  device: auto
+  dtype: auto
+  grad_checkpointing: true
+  gradient_accumulation: auto
+  max_batch_tokens: auto
+  max_batch_size: auto
+  num_workers: auto
+  compile: true
+accelerate:
+  dispatch_batches: true
+  use_deepspeed: false
+profiling:
+  log_every: 50
+  eval_every_steps: auto
+budget:
+  hours: auto

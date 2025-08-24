@@ -1,0 +1,54 @@
+{
+  "experiment_5a": {
+    "storage_loss_vs_beta": [
+      {
+        "beta": 0.05,
+        "loss": 0.89
+      },
+      {
+        "beta": 0.15,
+        "loss": 0.86
+      },
+      {
+        "beta": 0.3,
+        "loss": 0.86
+      },
+      {
+        "beta": 0.5,
+        "loss": 0.86
+      },
+      {
+        "beta": 1.5,
+        "loss": 0.86
+      }
+    ],
+    "alpha_s_mod": 0.009045684858606148,
+    "c_s_mod": 0.8559737895931147
+  },
+  "experiment_5b": {
+    "retrieval_loss_vs_gamma": [
+      {
+        "gamma": 1.0,
+        "loss": 0.14,
+        "total_loss": 1.0
+      },
+      {
+        "gamma": 2.0,
+        "loss": 0.14,
+        "total_loss": 1.0
+      },
+      {
+        "gamma": 3.0,
+        "loss": 0.14,
+        "total_loss": 1.0
+      },
+      {
+        "gamma": 1000.0,
+        "loss": 0.14,
+        "total_loss": 1.0
+      }
+    ],
+    "alpha_r_mod": -1.7123296600365396e-16,
+    "c_r_mod": 0.14
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "by_dataset": {
+    "trivia_mem": {
+      "storage": {
+        "gpt2": {
+          "stored_frac": 0.30000000000000004,
+          "loss": 0.7,
+          "N": 10
+        },
+        "gpt2-medium": {
+          "stored_frac": 0.30000000000000004,
+          "loss": 0.7,
+          "N": 10
+        },
+        "gpt2-large": {
+          "stored_frac": 0.4,
+          "loss": 0.6,
+          "N": 10
+        }
+      },
+      "retrieval": {
+        "gpt2": {
+          "gamma1": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.30000000000000004,
+            "storage_loss": 0.7,
+            "N": 10
+          },
+          "gamma2": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.30000000000000004,
+            "storage_loss": 0.7,
+            "N": 10
+          },
+          "gamma3": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.30000000000000004,
+            "storage_loss": 0.7,
+            "N": 10
+          },
+          "gamma_inf": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.30000000000000004,
+            "storage_loss": 0.7,
+            "N": 10
+          }
+        },
+        "gpt2-medium": {
+          "gamma1": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.30000000000000004,
+            "storage_loss": 0.7,
+            "N": 10
+          },
+          "gamma2": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.30000000000000004,
+            "storage_loss": 0.7,
+            "N": 10
+          },
+          "gamma3": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.30000000000000004,
+            "storage_loss": 0.7,
+            "N": 10
+          },
+          "gamma_inf": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.30000000000000004,
+            "storage_loss": 0.7,
+            "N": 10
+          }
+        },
+        "gpt2-large": {
+          "gamma1": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma2": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma3": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma_inf": {
+            "success_frac": 0.09999999999999998,
+            "total_loss": 0.9,
+            "retrieval_loss": 0.30000000000000004,
+            "storage_loss": 0.6,
+            "N": 10
+          }
+        }
+      },
+      "storage_betas": [
+        {
+          "beta": 0.4,
+          "loss": 0.7
+        },
+        {
+          "beta": 1.0,
+          "loss": 0.7
+        },
+        {
+          "beta": 7.0,
+          "loss": 0.6
+        }
+      ]
+    },
+    "natural_q": {
+      "storage": {
+        "gpt2": {
+          "stored_frac": 0.4,
+          "loss": 0.6,
+          "N": 10
+        },
+        "gpt2-medium": {
+          "stored_frac": 0.7,
+          "loss": 0.30000000000000004,
+          "N": 10
+        },
+        "gpt2-large": {
+          "stored_frac": 0.7,
+          "loss": 0.30000000000000004,
+          "N": 10
+        }
+      },
+      "retrieval": {
+        "gpt2": {
+          "gamma1": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma2": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma3": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma_inf": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          }
+        },
+        "gpt2-medium": {
+          "gamma1": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.7,
+            "storage_loss": 0.30000000000000004,
+            "N": 10
+          },
+          "gamma2": {
+            "success_frac": 0.09999999999999998,
+            "total_loss": 0.9,
+            "retrieval_loss": 0.6,
+            "storage_loss": 0.30000000000000004,
+            "N": 10
+          },
+          "gamma3": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.7,
+            "storage_loss": 0.30000000000000004,
+            "N": 10
+          },
+          "gamma_inf": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.7,
+            "storage_loss": 0.30000000000000004,
+            "N": 10
+          }
+        },
+        "gpt2-large": {
+          "gamma1": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.7,
+            "storage_loss": 0.30000000000000004,
+            "N": 10
+          },
+          "gamma2": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.7,
+            "storage_loss": 0.30000000000000004,
+            "N": 10
+          },
+          "gamma3": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.7,
+            "storage_loss": 0.30000000000000004,
+            "N": 10
+          },
+          "gamma_inf": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.7,
+            "storage_loss": 0.30000000000000004,
+            "N": 10
+          }
+        }
+      },
+      "storage_betas": [
+        {
+          "beta": 0.4,
+          "loss": 0.6
+        },
+        {
+          "beta": 1.0,
+          "loss": 0.30000000000000004
+        },
+        {
+          "beta": 7.0,
+          "loss": 0.30000000000000004
+        }
+      ]
+    },
+    "hotpot_bridge": {
+      "storage": {
+        "gpt2": {
+          "stored_frac": 0.4,
+          "loss": 0.6,
+          "N": 10
+        },
+        "gpt2-medium": {
+          "stored_frac": 0.4,
+          "loss": 0.6,
+          "N": 10
+        },
+        "gpt2-large": {
+          "stored_frac": 0.4,
+          "loss": 0.6,
+          "N": 10
+        }
+      },
+      "retrieval": {
+        "gpt2": {
+          "gamma1": {
+            "success_frac": 0.09999999999999998,
+            "total_loss": 0.9,
+            "retrieval_loss": 0.30000000000000004,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma2": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma3": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma_inf": {
+            "success_frac": 0.09999999999999998,
+            "total_loss": 0.9,
+            "retrieval_loss": 0.30000000000000004,
+            "storage_loss": 0.6,
+            "N": 10
+          }
+        },
+        "gpt2-medium": {
+          "gamma1": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma2": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma3": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma_inf": {
+            "success_frac": 0.09999999999999998,
+            "total_loss": 0.9,
+            "retrieval_loss": 0.30000000000000004,
+            "storage_loss": 0.6,
+            "N": 10
+          }
+        },
+        "gpt2-large": {
+          "gamma1": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma2": {
+            "success_frac": 0.09999999999999998,
+            "total_loss": 0.9,
+            "retrieval_loss": 0.30000000000000004,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma3": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          },
+          "gamma_inf": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.4,
+            "storage_loss": 0.6,
+            "N": 10
+          }
+        }
+      },
+      "storage_betas": [
+        {
+          "beta": 0.4,
+          "loss": 0.6
+        },
+        {
+          "beta": 1.0,
+          "loss": 0.6
+        },
+        {
+          "beta": 7.0,
+          "loss": 0.6
+        }
+      ]
+    },
+    "gsm_hard": {
+      "storage": {
+        "gpt2": {
+          "stored_frac": 0.6,
+          "loss": 0.4,
+          "N": 10
+        },
+        "gpt2-medium": {
+          "stored_frac": 0.5,
+          "loss": 0.5,
+          "N": 10
+        },
+        "gpt2-large": {
+          "stored_frac": 0.7,
+          "loss": 0.30000000000000004,
+          "N": 10
+        }
+      },
+      "retrieval": {
+        "gpt2": {
+          "gamma1": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.6,
+            "storage_loss": 0.4,
+            "N": 10
+          },
+          "gamma2": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.6,
+            "storage_loss": 0.4,
+            "N": 10
+          },
+          "gamma3": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.6,
+            "storage_loss": 0.4,
+            "N": 10
+          },
+          "gamma_inf": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.6,
+            "storage_loss": 0.4,
+            "N": 10
+          }
+        },
+        "gpt2-medium": {
+          "gamma1": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.5,
+            "storage_loss": 0.5,
+            "N": 10
+          },
+          "gamma2": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.5,
+            "storage_loss": 0.5,
+            "N": 10
+          },
+          "gamma3": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.5,
+            "storage_loss": 0.5,
+            "N": 10
+          },
+          "gamma_inf": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.5,
+            "storage_loss": 0.5,
+            "N": 10
+          }
+        },
+        "gpt2-large": {
+          "gamma1": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.7,
+            "storage_loss": 0.30000000000000004,
+            "N": 10
+          },
+          "gamma2": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.7,
+            "storage_loss": 0.30000000000000004,
+            "N": 10
+          },
+          "gamma3": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.7,
+            "storage_loss": 0.30000000000000004,
+            "N": 10
+          },
+          "gamma_inf": {
+            "success_frac": 0.0,
+            "total_loss": 1.0,
+            "retrieval_loss": 0.7,
+            "storage_loss": 0.30000000000000004,
+            "N": 10
+          }
+        }
+      },
+      "storage_betas": [
+        {
+          "beta": 0.4,
+          "loss": 0.4
+        },
+        {
+          "beta": 1.0,
+          "loss": 0.5
+        },
+        {
+          "beta": 7.0,
+          "loss": 0.30000000000000004
+        }
+      ]
+    }
+  },
+  "alpha_s": null,
+  "alpha_r": 0.004961384500925229,
+  "c_r": 0.5431843036881375
+}

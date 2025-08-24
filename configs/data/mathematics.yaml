@@ -1,0 +1,28 @@
+name: mathematics
+source:
+  hf_dataset: openai/gsm8k
+  hf_config: main
+  split_map:
+    train: train
+    valid: validation
+    test: test
+  streaming: true
+processing:
+  text_field: question
+  pack_sequences: true
+  max_length: 512
+  drop_remainder: true
+limits:
+  max_train_samples: auto
+  max_eval_samples: auto
+tokenizer:
+  name: auto
+  truncation: true
+  padding: false
+loader:
+  batch_size: auto
+  num_workers: ${compute.num_workers}
+stats:
+  compute_unigram_entropy: true
+  compute_ngram_entropy: [6]
+  compute_mi: true

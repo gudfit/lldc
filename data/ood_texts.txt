@@ -1,0 +1,2234 @@
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_155(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_155(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_25(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_25(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_20(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_20(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_66(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_66(-2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_90(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_90(3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_132(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_132(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_50(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_50(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_84(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_84(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_93(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_93(-6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_124(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_124(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_203(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_203(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_18(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_18(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_69(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_69(-6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_22(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_22(-1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_117(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_117(-3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_7(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_7(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_246(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_246(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_95(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_95(6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_44(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_44(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_114(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_114(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_70(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_70(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_142(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_142(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_205(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_205(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_49(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_49(3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_144(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_144(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_80(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_80(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_147(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_147(0)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_38(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_38(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_56(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_56(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_82(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_82(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_15(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_15(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_140(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_140(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_195(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_195(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_200(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_200(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_231(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_231(3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_232(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_232(-2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_59(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_59(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_21(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_21(0)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_138(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_138(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_55(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_55(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_120(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_120(6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_6(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_6(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_216(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_216(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_81(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_81(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_92(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_92(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_86(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_86(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_184(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_184(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_245(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_245(0)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_208(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_208(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_218(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_218(-1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_196(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_196(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_33(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_33(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_198(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_198(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_34(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_34(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_30(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_30(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_12(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_12(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_126(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_126(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_122(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_122(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_173(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_173(-2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_97(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_97(-1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_87(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_87(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_244(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_244(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_183(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_183(-1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_217(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_217(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_234(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_234(6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_121(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_121(-6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_4(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_4(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_94(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_94(-3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_139(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_139(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_8(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_8(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_101(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_101(-6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_40(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_40(-3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_13(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_13(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_247(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_247(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_166(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_166(0)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_202(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_202(3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_163(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_163(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_154(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_154(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_36(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_36(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_219(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_219(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_29(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_29(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_130(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_130(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_2(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_2(-2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_179(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_179(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_39(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_39(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_42(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_42(3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_172(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_172(-6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_109(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_109(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_11(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_11(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_174(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_174(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_146(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_146(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_72(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_72(3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_111(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_111(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_105(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_105(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_88(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_88(0)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_170(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_170(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_104(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_104(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_58(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_58(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_74(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_74(3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_160(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_160(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_116(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_116(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_99(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_99(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_210(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_210(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_28(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_28(-3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_149(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_149(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_228(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_228(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_60(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_60(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_223(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_223(-3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_91(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_91(-1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_187(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_187(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_103(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_103(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_169(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_169(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_45(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_45(-1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_76(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_76(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_19(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_19(3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_240(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_240(6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_96(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_96(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_150(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_150(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_158(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_158(6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_153(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_153(-1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_64(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_64(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_26(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_26(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_68(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_68(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_207(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_207(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_248(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_248(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_108(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_108(-6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_221(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_221(6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_77(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_77(3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_236(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_236(3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_191(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_191(0)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_0(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_0(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_115(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_115(-3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_181(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_181(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_113(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_113(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_164(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_164(-3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_162(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_162(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_225(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_225(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_128(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_128(-6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_65(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_65(-2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_46(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_46(-1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_123(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_123(0)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_107(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_107(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_193(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_193(-6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_61(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_61(3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_51(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_51(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_151(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_151(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_189(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_189(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_215(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_215(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_157(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_157(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_79(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_79(-1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_5(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_5(-3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_230(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_230(-2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_249(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_249(-1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_143(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_143(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_242(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_242(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_197(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_197(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_222(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_222(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_145(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_145(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_133(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_133(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_176(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_176(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_165(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_165(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_224(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_224(-2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_237(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_237(-6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_239(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_239(0)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_9(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_9(6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_85(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_85(-1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_47(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_47(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_238(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_238(-1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_78(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_78(0)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_156(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_156(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_67(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_67(0)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_186(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_186(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_125(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_125(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_32(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_32(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_73(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_73(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_102(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_102(-2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_220(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_220(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_212(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_212(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_119(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_119(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_110(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_110(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_3(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_3(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_127(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_127(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_1(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_1(-6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_62(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_62(-3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_16(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_16(-2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_129(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_129(-6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_23(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_23(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_48(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_48(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_188(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_188(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_83(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_83(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_89(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_89(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_227(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_227(0)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_201(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_201(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_52(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_52(-2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_106(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_106(-3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_206(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_206(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_209(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_209(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_131(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_131(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_137(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_137(0)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_10(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_10(-6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_63(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_63(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_182(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_182(-2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_53(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_53(-3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_37(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_37(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_168(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_168(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_136(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_136(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_178(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_178(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_180(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_180(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_41(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_41(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_233(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_233(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_141(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_141(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_229(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_229(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_54(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_54(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_98(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_98(-3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_199(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_199(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_14(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_14(0)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_134(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_134(-3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_192(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_192(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_71(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_71(1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_148(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_148(-7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_118(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_118(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_190(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_190(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_31(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_31(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_152(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_152(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_177(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_177(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_112(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_112(0)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_24(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_24(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_226(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_226(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_17(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_17(-2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_171(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_171(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_194(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_194(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_161(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_161(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_75(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_75(4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_100(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_100(5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_243(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_243(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_43(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_43(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_214(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_214(7)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_57(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_57(-8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_211(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_211(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_35(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_35(-1)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_159(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_159(2)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_135(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_135(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_167(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_167(3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_241(x):
+    """Return x^3 - 1."""
+    return x*x - 1  # BUG: not cube
+
+Question: After fixing, what is f_241(6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_213(x):
+    """Return the sum 1+2+...+x for integer x>=1."""
+    s = 0
+    for k in range(x):
+        s += k  # BUG: off by one; misses x
+    return s
+
+Question: After fixing, what is f_213(-3)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_204(x):
+    """Return x! for integer x>=0."""
+    if x == 0:
+        return 0  # BUG: 0! should be 1
+    out = 1
+    for k in range(1, x):  # BUG: stops early
+        out *= k
+    return out
+
+Question: After fixing, what is f_204(8)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_185(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_185(-4)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_235(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_235(-6)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_175(x):
+    """Return x^2 + 3."""
+    return xx + 3
+
+Question: After fixing, what is f_175(-5)? Explain briefly and give the final integer.
+You are given a buggy Python function. First, fix the bug according to the docstring; then compute its return value.
+def f_27(x):
+    """Return |x| + 7."""
+    return x + 7  # BUG: missing abs
+
+Question: After fixing, what is f_27(0)? Explain briefly and give the final integer.
+Compute the definite integral ∫_-4^4 (-2x + -5) dx. Show antiderivative and evaluation; give a numeric answer.
+Solve for x: 5x + -1 = -51. Show your steps and give the final value of x.
+A rectangle has width 24 and height 37. What is its area?
+Solve the system:
+6x + 3y = 39
+5x + 6y = 43
+Explain steps; give the ordered pair (x, y).
+How many ways to choose 3 objects out of 10 distinct objects? Give a number.
+Solve: 207 + 283 = ? Explain each step in words. Finish with the final number.
+Compute the definite integral ∫_3^3 (-3x + -1) dx. Show antiderivative and evaluation; give a numeric answer.
+Compute the definite integral ∫_-1^5 (-1x + -4) dx. Show antiderivative and evaluation; give a numeric answer.
+Solve: 252 ÷ 36 = ? Show your steps.
+Compute the definite integral ∫_0^5 (-3x + -3) dx. Show antiderivative and evaluation; give a numeric answer.
+Solve for x: 7x + -17 = -87. Show your steps and give the final value of x.
+Compute the definite integral ∫_-4^4 (-2x + 2) dx. Show antiderivative and evaluation; give a numeric answer.
+Solve: 885 ÷ 59 = ? Show your steps.
+Solve the system:
+4x + 2y = 10
+5x + 2y = 11
+Explain steps; give the ordered pair (x, y).
+Solve for x: 3x + -9 = -21. Show your steps and give the final value of x.
+Compute gcd(52, 88). Provide the integer result.
+A rectangle has width 9 and height 35. What is its area?
+Let f(x) = 6x^3 + 5x^2 + 1x + 7. Compute f'(-5). Show the differentiation and the final value.
+Let f(x) = 2x^3 + -1x^2 + 2x + 7. Compute f'(0). Show the differentiation and the final value.
+Compute the definite integral ∫_-5^4 (2x + 2) dx. Show antiderivative and evaluation; give a numeric answer.
+Solve for x: 6x + 7 = 55. Show your steps and give the final value of x.
+Solve: 594 ÷ 33 = ? Show your steps.
+Solve for x: 2x + 9 = 13. Show your steps and give the final value of x.
+A rectangle has width 17 and height 31. What is its area?
+Solve for x: 8x + -14 = -78. Show your steps and give the final value of x.
+Let f(x) = 4x^3 + 1x^2 + 1x + 7. Compute f'(2). Show the differentiation and the final value.
+A rectangle has width 27 and height 7. What is its area?
+Compute the definite integral ∫_-4^5 (3x + -4) dx. Show antiderivative and evaluation; give a numeric answer.
+Compute gcd(241, 138). Provide the integer result.
+Solve: 18 × 14 = ? Show your steps.
+A rectangle has width 35 and height 24. What is its area?
+Solve for x: 9x + 17 = -10. Show your steps and give the final value of x.
+A rectangle has width 7 and height 8. What is its area?
+Solve: 278 + 999 = ? Explain each step in words. Finish with the final number.
+Let f(x) = 6x^3 + 2x^2 + -2x + 7. Compute f'(-2). Show the differentiation and the final value.
+Solve the system:
+2x + 1y = -1
+2x + 2y = 2
+Explain steps; give the ordered pair (x, y).
+A rectangle has width 14 and height 40. What is its area?
+Solve: 74 × 8 = ? Show your steps.
+Solve the system:
+4x + 1y = 18
+4x + 4y = 24
+Explain steps; give the ordered pair (x, y).
+Solve the system:
+2x + 5y = -25
+3x + 5y = -25
+Explain steps; give the ordered pair (x, y).
+Compute gcd(59, 228). Provide the integer result.
+Solve: 240 + 257 = ? Explain each step in words. Finish with the final number.
+Solve: 90 × 13 = ? Show your steps.
+Solve the system:
+5x + 4y = 0
+3x + 3y = 3
+Explain steps; give the ordered pair (x, y).
+How many ways to choose 4 objects out of 10 distinct objects? Give a number.
+Compute the definite integral ∫_2^2 (2x + -8) dx. Show antiderivative and evaluation; give a numeric answer.
+Solve: 10 + 882 = ? Explain each step in words. Finish with the final number.
+A rectangle has width 15 and height 28. What is its area?
+How many ways to choose 3 objects out of 10 distinct objects? Give a number.
+Compute gcd(142, 260). Provide the integer result.
+Compute gcd(181, 154). Provide the integer result.
+How many ways to choose 3 objects out of 9 distinct objects? Give a number.
+Let f(x) = -2x^3 + -4x^2 + 4x + 7. Compute f'(-1). Show the differentiation and the final value.
+Let f(x) = 2x^3 + 5x^2 + 1x + 7. Compute f'(-4). Show the differentiation and the final value.
+Solve for x: 2x + 15 = 15. Show your steps and give the final value of x.
+Compute the definite integral ∫_5^5 (1x + -7) dx. Show antiderivative and evaluation; give a numeric answer.
+Solve the system:
+3x + 3y = 9
+4x + 2y = 6
+Explain steps; give the ordered pair (x, y).
+A rectangle has width 29 and height 11. What is its area?
+How many ways to choose 2 objects out of 10 distinct objects? Give a number.
+Compute the definite integral ∫_-3^-1 (1x + 1) dx. Show antiderivative and evaluation; give a numeric answer.
+Let f(x) = -3x^3 + -2x^2 + 1x + 7. Compute f'(2). Show the differentiation and the final value.
+Compute the definite integral ∫_-5^4 (5x + -7) dx. Show antiderivative and evaluation; give a numeric answer.
+Let f(x) = 4x^3 + 2x^2 + 1x + 7. Compute f'(3). Show the differentiation and the final value.
+Let f(x) = -5x^3 + 5x^2 + -4x + 7. Compute f'(4). Show the differentiation and the final value.
+Solve: 79 × 10 = ? Show your steps.
+Let f(x) = 4x^3 + 5x^2 + 1x + 7. Compute f'(-1). Show the differentiation and the final value.
+How many ways to choose 3 objects out of 10 distinct objects? Give a number.
+Solve the system:
+5x + 3y = 13
+1x + 6y = -19
+Explain steps; give the ordered pair (x, y).
+Compute the definite integral ∫_2^5 (-1x + 8) dx. Show antiderivative and evaluation; give a numeric answer.
+Solve: 936 + 272 = ? Explain each step in words. Finish with the final number.
+Solve the system:
+5x + 4y = 1
+6x + 4y = 2
+Explain steps; give the ordered pair (x, y).
+Compute the definite integral ∫_1^2 (-3x + -7) dx. Show antiderivative and evaluation; give a numeric answer.
+A rectangle has width 23 and height 27. What is its area?
+A rectangle has width 36 and height 8. What is its area?
+Solve for x: 9x + -6 = -69. Show your steps and give the final value of x.
+Solve: 553 + 708 = ? Explain each step in words. Finish with the final number.
+Solve for x: 3x + -12 = 9. Show your steps and give the final value of x.
+Solve for x: 4x + 0 = -12. Show your steps and give the final value of x.
+Solve the system:
+5x + 6y = -33
+5x + 4y = -27
+Explain steps; give the ordered pair (x, y).
+Solve: 62 × 9 = ? Show your steps.
+Compute gcd(222, 290). Provide the integer result.
+Let f(x) = 2x^3 + 1x^2 + 5x + 7. Compute f'(1). Show the differentiation and the final value.
+Compute gcd(159, 146). Provide the integer result.
+Solve: 398 + 778 = ? Explain each step in words. Finish with the final number.
+How many ways to choose 2 objects out of 5 distinct objects? Give a number.
+Compute gcd(197, 289). Provide the integer result.
+Solve for x: 3x + -16 = -46. Show your steps and give the final value of x.
+Solve: 196 ÷ 14 = ? Show your steps.
+Solve: 93 × 16 = ? Show your steps.
+Solve for x: 5x + -15 = -60. Show your steps and give the final value of x.
+A rectangle has width 24 and height 10. What is its area?
+How many ways to choose 4 objects out of 8 distinct objects? Give a number.
+Solve: 425 + 146 = ? Explain each step in words. Finish with the final number.
+How many ways to choose 4 objects out of 6 distinct objects? Give a number.
+Solve the system:
+6x + 1y = 5
+4x + 5y = -1
+Explain steps; give the ordered pair (x, y).
+Let f(x) = -3x^3 + -3x^2 + 2x + 7. Compute f'(4). Show the differentiation and the final value.
+Solve: 444 ÷ 37 = ? Show your steps.
+A rectangle has width 9 and height 24. What is its area?
+Compute gcd(285, 75). Provide the integer result.
+Solve the system:
+2x + 6y = -4
+2x + 6y = -4
+Explain steps; give the ordered pair (x, y).
+Compute the definite integral ∫_-5^-2 (3x + 5) dx. Show antiderivative and evaluation; give a numeric answer.
+Compute the definite integral ∫_-1^4 (3x + 3) dx. Show antiderivative and evaluation; give a numeric answer.
+Compute gcd(181, 237). Provide the integer result.
+Compute the definite integral ∫_0^3 (-3x + -7) dx. Show antiderivative and evaluation; give a numeric answer.
+Solve for x: 4x + -19 = -15. Show your steps and give the final value of x.
+Solve the system:
+2x + 4y = -8
+1x + 3y = -7
+Explain steps; give the ordered pair (x, y).
+Let f(x) = -5x^3 + -4x^2 + -2x + 7. Compute f'(-3). Show the differentiation and the final value.
+Let f(x) = 3x^3 + 3x^2 + -5x + 7. Compute f'(4). Show the differentiation and the final value.
+Solve the system:
+6x + 2y = -16
+1x + 1y = 0
+Explain steps; give the ordered pair (x, y).
+Solve for x: 5x + -7 = 18. Show your steps and give the final value of x.
+Solve: 435 + 209 = ? Explain each step in words. Finish with the final number.
+How many ways to choose 4 objects out of 4 distinct objects? Give a number.
+How many ways to choose 4 objects out of 5 distinct objects? Give a number.
+Solve: 24 + 141 = ? Explain each step in words. Finish with the final number.
+Solve: 907 + 984 = ? Explain each step in words. Finish with the final number.
+How many ways to choose 3 objects out of 5 distinct objects? Give a number.
+Let f(x) = 4x^3 + -1x^2 + 4x + 7. Compute f'(4). Show the differentiation and the final value.
+How many ways to choose 4 objects out of 9 distinct objects? Give a number.
+Solve: 927 + 23 = ? Explain each step in words. Finish with the final number.
+Let f(x) = -5x^3 + 3x^2 + 6x + 7. Compute f'(0). Show the differentiation and the final value.
+Let f(x) = 1x^3 + 5x^2 + 6x + 7. Compute f'(-4). Show the differentiation and the final value.
+Compute gcd(58, 275). Provide the integer result.
+How many ways to choose 3 objects out of 4 distinct objects? Give a number.
+Solve: 286 + 287 = ? Explain each step in words. Finish with the final number.
+Solve: 626 + 531 = ? Explain each step in words. Finish with the final number.
+Compute gcd(242, 60). Provide the integer result.
+How many ways to choose 2 objects out of 8 distinct objects? Give a number.
+Solve: 677 + 424 = ? Explain each step in words. Finish with the final number.
+Solve: 422 + 504 = ? Explain each step in words. Finish with the final number.
+Solve: 77 × 5 = ? Show your steps.
+A rectangle has width 21 and height 31. What is its area?
+Compute gcd(235, 234). Provide the integer result.
+Solve the system:
+6x + 4y = 24
+1x + 2y = 8
+Explain steps; give the ordered pair (x, y).
+Solve: 286 ÷ 22 = ? Show your steps.
+Solve the system:
+2x + 3y = 19
+5x + 3y = 25
+Explain steps; give the ordered pair (x, y).
+A rectangle has width 38 and height 23. What is its area?
+A rectangle has width 15 and height 35. What is its area?
+Let f(x) = 3x^3 + 3x^2 + 3x + 7. Compute f'(2). Show the differentiation and the final value.
+Solve: 66 × 10 = ? Show your steps.
+Let f(x) = 2x^3 + -3x^2 + 1x + 7. Compute f'(1). Show the differentiation and the final value.
+Solve for x: 6x + 12 = -48. Show your steps and give the final value of x.
+How many ways to choose 2 objects out of 10 distinct objects? Give a number.
+Solve: 1248 ÷ 96 = ? Show your steps.
+Solve: 327 + 655 = ? Explain each step in words. Finish with the final number.
+Compute gcd(199, 80). Provide the integer result.
+How many ways to choose 2 objects out of 7 distinct objects? Give a number.
+A rectangle has width 17 and height 31. What is its area?
+Solve for x: 5x + 13 = 18. Show your steps and give the final value of x.
+How many ways to choose 3 objects out of 4 distinct objects? Give a number.
+Solve the system:
+2x + 3y = 19
+5x + 1y = 28
+Explain steps; give the ordered pair (x, y).
+How many ways to choose 3 objects out of 4 distinct objects? Give a number.
+How many ways to choose 2 objects out of 9 distinct objects? Give a number.
+Solve for x: 5x + 3 = -47. Show your steps and give the final value of x.
+A rectangle has width 9 and height 32. What is its area?
+How many ways to choose 2 objects out of 4 distinct objects? Give a number.
+Solve: 301 + 896 = ? Explain each step in words. Finish with the final number.
+Solve for x: 2x + -15 = 1. Show your steps and give the final value of x.
+Solve: 814 ÷ 74 = ? Show your steps.
+Compute the definite integral ∫_-5^0 (5x + -5) dx. Show antiderivative and evaluation; give a numeric answer.
+Let f(x) = 6x^3 + 3x^2 + -5x + 7. Compute f'(5). Show the differentiation and the final value.
+Solve: 674 + 567 = ? Explain each step in words. Finish with the final number.
+Compute gcd(250, 88). Provide the integer result.
+Solve the system:
+4x + 2y = 0
+5x + 6y = 7
+Explain steps; give the ordered pair (x, y).
+Solve for x: 3x + -5 = -26. Show your steps and give the final value of x.
+Let f(x) = 4x^3 + 5x^2 + -3x + 7. Compute f'(4). Show the differentiation and the final value.
+A rectangle has width 34 and height 31. What is its area?
+Solve: 70 + 561 = ? Explain each step in words. Finish with the final number.
+Compute gcd(293, 218). Provide the integer result.
+A rectangle has width 17 and height 12. What is its area?
+A rectangle has width 6 and height 14. What is its area?
+Solve for x: 3x + -19 = -19. Show your steps and give the final value of x.
+Compute gcd(263, 53). Provide the integer result.
+Solve the system:
+1x + 1y = 0
+6x + 1y = 10
+Explain steps; give the ordered pair (x, y).
+A rectangle has width 25 and height 13. What is its area?
+Let f(x) = -1x^3 + 6x^2 + 1x + 7. Compute f'(0). Show the differentiation and the final value.
+Let f(x) = -4x^3 + -5x^2 + 4x + 7. Compute f'(0). Show the differentiation and the final value.
+Compute the definite integral ∫_2^3 (5x + 3) dx. Show antiderivative and evaluation; give a numeric answer.
+Compute gcd(83, 271). Provide the integer result.
+Solve the system:
+3x + 3y = 0
+5x + 3y = -2
+Explain steps; give the ordered pair (x, y).
+Solve: 648 ÷ 72 = ? Show your steps.
+Solve for x: 3x + -11 = -17. Show your steps and give the final value of x.
+Compute the definite integral ∫_1^2 (3x + -5) dx. Show antiderivative and evaluation; give a numeric answer.
+Solve: 532 ÷ 28 = ? Show your steps.
+Solve the system:
+6x + 4y = 22
+6x + 2y = 26
+Explain steps; give the ordered pair (x, y).
+Compute gcd(289, 188). Provide the integer result.
+Solve: 807 + 986 = ? Explain each step in words. Finish with the final number.
+Solve: 97 × 9 = ? Show your steps.
+A rectangle has width 32 and height 8. What is its area?
+Solve: 449 + 372 = ? Explain each step in words. Finish with the final number.
+Solve the system:
+1x + 4y = -8
+5x + 5y = -25
+Explain steps; give the ordered pair (x, y).
+Compute the definite integral ∫_3^5 (1x + 8) dx. Show antiderivative and evaluation; give a numeric answer.
+How many ways to choose 4 objects out of 4 distinct objects? Give a number.
+Solve for x: 7x + -14 = -28. Show your steps and give the final value of x.
+Solve the system:
+2x + 5y = 27
+1x + 3y = 16
+Explain steps; give the ordered pair (x, y).
+Compute the definite integral ∫_-2^-1 (-2x + -2) dx. Show antiderivative and evaluation; give a numeric answer.
+How many ways to choose 3 objects out of 8 distinct objects? Give a number.
+Solve: 101 + 442 = ? Explain each step in words. Finish with the final number.
+A rectangle has width 35 and height 20. What is its area?
+Compute gcd(276, 186). Provide the integer result.
+Compute the definite integral ∫_0^2 (3x + 3) dx. Show antiderivative and evaluation; give a numeric answer.
+Solve: 99 × 15 = ? Show your steps.
+Compute gcd(139, 182). Provide the integer result.
+Solve: 29 × 6 = ? Show your steps.
+Solve: 124 + 622 = ? Explain each step in words. Finish with the final number.
+Solve: 480 ÷ 80 = ? Show your steps.
+Let f(x) = -4x^3 + 4x^2 + 1x + 7. Compute f'(4). Show the differentiation and the final value.
+Solve the system:
+2x + 6y = 20
+4x + 4y = 24
+Explain steps; give the ordered pair (x, y).
+Solve the system:
+2x + 5y = -20
+5x + 3y = -31
+Explain steps; give the ordered pair (x, y).
+Compute the definite integral ∫_3^5 (-2x + -3) dx. Show antiderivative and evaluation; give a numeric answer.
+Compute gcd(187, 200). Provide the integer result.
+Compute gcd(269, 51). Provide the integer result.
+Compute the definite integral ∫_3^4 (-2x + 1) dx. Show antiderivative and evaluation; give a numeric answer.
+Compute the definite integral ∫_4^5 (-1x + 5) dx. Show antiderivative and evaluation; give a numeric answer.
+Compute gcd(265, 258). Provide the integer result.
+Solve the system:
+3x + 3y = 15
+6x + 3y = 24
+Explain steps; give the ordered pair (x, y).
+Compute the definite integral ∫_-1^4 (3x + 1) dx. Show antiderivative and evaluation; give a numeric answer.
+A rectangle has width 22 and height 26. What is its area?
+Solve: 583 + 186 = ? Explain each step in words. Finish with the final number.
+Let f(x) = 1x^3 + -4x^2 + -2x + 7. Compute f'(4). Show the differentiation and the final value.
+Solve the system:
+6x + 4y = 26
+6x + 1y = 29
+Explain steps; give the ordered pair (x, y).
+Solve for x: 3x + 14 = 41. Show your steps and give the final value of x.
+Solve: 518 ÷ 37 = ? Show your steps.
+How many ways to choose 4 objects out of 10 distinct objects? Give a number.
+How many ways to choose 4 objects out of 8 distinct objects? Give a number.
+How many ways to choose 2 objects out of 8 distinct objects? Give a number.
+A rectangle has width 19 and height 27. What is its area?
+Solve: 75 × 19 = ? Show your steps.
+Solve: 64 × 7 = ? Show your steps.
+Solve for x: 2x + 2 = -4. Show your steps and give the final value of x.
+Solve: 63 × 4 = ? Show your steps.
+Compute gcd(67, 139). Provide the integer result.
+Let f(x) = 1x^3 + -1x^2 + -2x + 7. Compute f'(2). Show the differentiation and the final value.
+A rectangle has width 17 and height 36. What is its area?
+Solve: 156 ÷ 26 = ? Show your steps.
+Solve: 87 + 875 = ? Explain each step in words. Finish with the final number.
+Let f(x) = 4x^3 + 1x^2 + -5x + 7. Compute f'(0). Show the differentiation and the final value.
+Solve the system:
+4x + 4y = -12
+6x + 2y = -18
+Explain steps; give the ordered pair (x, y).
+How many ways to choose 2 objects out of 7 distinct objects? Give a number.
+Solve for x: 7x + 9 = 79. Show your steps and give the final value of x.
+Solve for x: 4x + 3 = 27. Show your steps and give the final value of x.
+Solve: 991 + 399 = ? Explain each step in words. Finish with the final number.
+Compute gcd(288, 192). Provide the integer result.
+Solve: 36 × 12 = ? Show your steps.
+Compute gcd(231, 228). Provide the integer result.
+Compute the definite integral ∫_-5^4 (5x + -2) dx. Show antiderivative and evaluation; give a numeric answer.
+Compute gcd(124, 199). Provide the integer result.
+How many ways to choose 4 objects out of 8 distinct objects? Give a number.
+Solve for x: 5x + 18 = 3. Show your steps and give the final value of x.
+A rectangle has width 27 and height 36. What is its area?
+Solve: 137 + 93 = ? Explain each step in words. Finish with the final number.

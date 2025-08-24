@@ -1,0 +1,97 @@
+name: e4a_decomposition_fast_it
+defaults:
+  - _self_
+
+evaluation:
+  max_per_dataset: 100
+  p_conf: 0.9
+  loglog_min_points: 3
+  seed: 123
+
+storage_axis:
+  # Betas ~ parameter counts (billions) within one family: Qwen2-Instruct
+  betas: [0.5, 1.5, 7.0]
+  models:
+    - Qwen/Qwen2-0.5B-Instruct
+    - Qwen/Qwen2-1.5B-Instruct
+    - Qwen/Qwen2-7B-Instruct
+
+retrieval_axis:
+  gammas:
+    gamma1: 1
+    gamma2: 2
+    gamma3: 3
+    gamma_inf: 1000
+  regimes:
+    gamma1:
+      method: mc_base
+      max_new_tokens: 1
+      temperature: 0.0
+      top_p: 1.0
+      beams: 1
+      chains: 0
+      depth: 1
+    gamma2:
+      method: mc_cot_hint
+      max_new_tokens: 1
+      temperature: 0.0
+      top_p: 1.0
+      beams: 1
+      chains: 0
+      depth: 1
+    gamma3:
+      method: mc_self_consistency
+      max_new_tokens: 48
+      temperature: 0.7
+      top_p: 0.95
+      beams: 1
+      chains: 3
+      depth: 1
+    gamma_inf:
+      method: mc_oracle
+      max_new_tokens: 64
+      temperature: 0.9
+      top_p: 0.95
+      beams: 1
+      chains: 8
+      depth: 1
+
+datasets:
+  - name: trivia_mem
+    hf_dataset: nq_open
+    hf_config: null
+    split: test
+    question_field: question
+    answer_field: answer
+    seed: 123
+
+  - name: natural_q
+    hf_dataset: squad
+    hf_config: null
+    split: validation
+    question_field: question
+    answer_field: answers.text
+    seed: 123
+
+  - name: hotpot_bridge
+    hf_dataset: hotpot_qa
+    hf_config: distractor
+    split: validation
+    question_field: question
+    answer_field: answer
+    filter:
+      field: type
+      equals: bridge
+    seed: 123
+
+  - name: gsm_hard
+    hf_dataset: openai/gsm8k
+    hf_config: main
+    split: test
+    question_field: question
+    answer_field: answer
+    seed: 123
+
+outputs:
+  dir: artifacts/results/exp4a_fast_it
+

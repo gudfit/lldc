@@ -1,0 +1,145 @@
+defaults:
+  - compute: local_dev
+  - data: wikitext-103
+  - model: roberta-base
+  - eval:
+      - efficiency
+      - fidelity
+      - crumpled_paper
+  - _self_
+
+experiment:
+  name: e1a_wiki103
+  seeds: 5
+  static_bits_override: 0
+  model_groups:
+    mlm: [bert-base-cased, roberta-base, distilroberta-base]
+    ar: [gpt2, gpt2-medium, gpt2-large]
+
+logging:
+  wandb:
+    enabled: false
+    project: lldc
+    entity: null
+
+compute:
+  gradient_accumulation: 1
+  mixed_precision: bf16
+  device: cuda
+
+data:
+  ensure_bootstrap: true
+  loader:
+    batch_size: 8
+    max_seq_len: 512
+
+stage1:
+  masking:
+    policy: targeted_dynamic
+    policy_set_fraction: 0.10
+    pll_token_scoring: true
+    recompute_each_epoch: true
+    curriculum:
+      rate_start: 0.2
+      rate_end: 0.8
+      schedule: auto
+  train:
+    epochs: auto
+    lr: auto
+    scheduler: auto
+    warmup_ratio: auto
+    batch_size: ${data.loader.batch_size}
+    gradient_accumulation: ${compute.gradient_accumulation}
+    grad_clip: 1.0
+    save_best: true
+
+stage2:
+  pm:
+    enabled: true
+    strategies: [topk_global, entropy_equalisation]
+    mask_rates: [0.2, 0.4, 0.6, 0.8]
+    position_codec: auto
+    arithmetic_coder:
+      enabled: true
+      oracle_model: gpt2-xl
+      kept_only_loop: true
+  vq:
+    enabled: true
+    codebook_sizes: [256, 512, 1024, 2048, 4096, 8192]
+    reuse_cache: true
+    force_retrain: false
+    bottleneck:
+      layer_after: 6
+      shared_codebook: true
+      commitment_beta: 0.25
+    index_lm:
+      type: gru
+      layers: 1
+      hidden_size: 512
+      epochs: 2
+
+stage3:
+  stopping:
+    eos_or_maxlen_margin: 1.05
+
+evaluation:
+  run_efficiency: true
+  run_fidelity: true
+  run_crumpled_paper: true
+
+crumpled_paper:
+  oracle_models: [gpt2-large]
+  measuring_tokenizer: oracle
+  alignment:
+    algorithm: needleman_wunsch
+    gap_penalty_bits: auto
+  spans:
+    sbert_model: sentence-transformers/all-mpnet-base-v2
+
+e2a:
+  pruning:
+    method: structured
+    schedule:
+      levels: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
+      order: auto
+    structured:
+      drop_attention_heads: true
+      drop_ffn_channels: true
+      drop_layers: false
+    saliency_metric: magnitude
+  recovery:
+    finetune_epochs: auto
+    lr: auto
+    scheduler: auto
+    warmup_ratio: auto
+  stage2_reuse: true
+
+e2b:
+  deduplication:
+    ngram:
+      n_list: [3, 4, 5]
+      top_k: 10
+    semantic:
+      minhash_bands: 20
+      minhash_rows: 5
+      sbert_model: sentence-transformers/all-mpnet-base-v2
+  regen_baseline:
+    subsample_every_N: [3, 5, 7]
+    kenlm_workdir: artifacts/runs/kenlm_5gram
+    beam_size: 16
+    cand_per_step: 200
+    max_vocab: 50000
+  scalability:
+    dataset: wikitext-2
+    factors: [1, 2, 4, 8, 16, 32]
+    temperature_protocol: fixed_greedy
+  outputs:
+    write_rd_curves: true
+    write_tables: true
+
+outputs:
+  dir: artifacts/results
+  write_rd_curves: true
+  write_tables: true
+  save_payloads: true
+

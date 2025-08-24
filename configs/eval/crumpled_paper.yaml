@@ -1,0 +1,15 @@
+name: crumpled_paper
+oracle:
+  ensemble: [gpt2-xl, google/gemma-3-270m]
+  measurement_tokenizer: gpt2-xl
+alignment:
+  algorithm: needleman_wunsch
+  gap_penalty_bits: auto
+metrics:
+  tcm: true
+  pcm: true
+  delta_ll_bits: true
+semantic_fidelity:
+  enabled: true
+  sbert_model: sentence-transformers/all-mpnet-base-v2
+  span: auto

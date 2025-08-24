@@ -1,0 +1,3 @@
+{
+  "error": "KenLM lmplz failed (order=2). Command '['/usr/local/bin/lmplz', '-o', '2', '--discount_fallback', '--prune', '0', '1', '2', '--temp_prefix', 'artifacts/runs/kenlm_2gram_eval/tmp', '--memory', '30%']' returned non-zero exit status 1."
+}

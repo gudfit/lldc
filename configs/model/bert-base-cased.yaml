@@ -1,0 +1,13 @@
+name: bert-base-cased
+arch: mlm
+pretrained_name: bert-base-cased
+context_length: 512
+tokenizer: ${.pretrained_name}
+specialise:
+  epochs: auto
+  lr: auto
+  weight_decay: 0.01
+  warmup_ratio: auto
+  scheduler: auto
+  gradient_clip: 1.0
+  freeze_embeddings: false

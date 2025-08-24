@@ -1,0 +1,5 @@
+{
+  "dataset_name": "wikitext-103",
+  "total_test_set_chars": 1285622,
+  "mutual_information_adjacent_tokens": 4.984976488531861
+}

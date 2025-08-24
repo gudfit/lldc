@@ -1,0 +1,64 @@
+name: e5_pos_modular
+
+seed: 13
+
+evaluation:
+  max_per_dataset: 500       
+  loglog_min_points: 3
+
+storage_axis:
+  models:
+    - "gpt2"
+    - "gpt2-medium"
+    - "gpt2-large"
+  model_params_b:
+    "gpt2": 0.124
+    "gpt2-medium": 0.355
+    "gpt2-large": 0.774
+    # Examples for Qwen2 — uncomment & switch models above if using:
+    # "Qwen/Qwen2-0.5B": 0.5
+    # "Qwen/Qwen2-1.5B": 1.5
+    # "Qwen/Qwen2-7B": 7.0
+    # "Qwen/Qwen2-72B": 72.0
+  trust_remote_code: true
+
+retrieval_axis:
+  model_for_retrieval: "gpt2-large"
+  regimes:
+    gamma1:            # low compute
+      method: direct
+      max_new_tokens: 8
+    gamma2:            # higher compute via brief CoT
+      method: cot_short
+      max_new_tokens: 64
+    gamma3:            # much higher via self-consistency
+      method: self_consistency
+      max_new_tokens: 24
+      temperature: 0.8
+      top_p: 0.9
+      chains: 32
+
+dataset:
+  name: trivia_qa
+  hf_dataset: trivia_qa
+  hf_config: rc.nocontext
+  split: validation
+  question_field: question
+  answer_field: answer.value
+
+# embeddings used to pick semi-hard foils within buckets
+embedding_model: "BAAI/bge-small-en-v1.5"
+
+finetuning:
+  epochs: 2                      # was 1; small bump helps separation
+  lr: 2.0e-5
+  batch_size: 4
+  max_length: 512
+  max_train_samples_per_bucket: 5000
+  sample_sweep: [500, 1000]     # add 2000/5000 later if needed
+  clear_cache: true
+
+outputs:
+  dir: artifacts/results/exp5_pos
+  cache_dir: artifacts/checkpoints/exp5_pos_models
+

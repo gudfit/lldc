@@ -1,0 +1,100 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lldc"
+version = "0.2.0"
+description = "LLMs as Data Compressors: reproducible research code for PM & VQ pipelines"
+authors = [{ name = "Gudfit" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "tensorflow==2.19.1",
+  "tensorboard==2.19.0",
+  "tf-keras==2.19.0",
+  "torch",
+  "seaborn",
+  "transformers>=4.35,<5",
+  "accelerate>=0.28",
+  "datasets>=2.19",
+  "tokenizers>=0.14",
+  "numpy<2.2",
+  "scipy",
+  "protobuf>=3.20.3,<5",
+  "tqdm",
+  "rich",
+  "evaluate>=0.4",
+  "bert-score",
+  "sacrebleu",
+  "kenlm",
+  "python-Levenshtein",
+  "sentence-transformers",
+  "constriction",
+  "matplotlib",
+  "pandas",
+  "hydra-core",
+  "bitsandbytes; platform_system == 'Linux'",
+  "wandb>=0.21.1",
+  "datasketch", 
+  "statsmodels",
+  "tensorflow-text==2.19.*",
+  "pip",
+  "bleurt @ git+https://github.com/google-research/bleurt.git",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "ruff", "mypy", "types-requests"]
+nlp = [
+  "numpy>=2.0,<2.2",
+  "blis==0.7.11",
+  "catalogue==2.0.10",
+  "cloudpathlib==0.21.1",
+  "confection==0.1.5",
+  "cymem==2.0.11",
+  "langcodes==3.5.0",
+  "language-data==1.3.0",
+  "marisa-trie==1.3.0",
+  "murmurhash==1.0.13",
+  "preshed==3.0.10",
+  "shellingham==1.5.4",
+  "smart-open==7.3.0.post1",
+  "spacy==3.7.5",
+  "spacy-legacy==3.0.12",
+  "spacy-loggers==1.0.5",
+  "srsly==2.5.1",
+  "thinc==8.2.4",
+  "typer==0.16.1",
+  "wasabi==1.1.3",
+  "weasel==0.4.1",
+]
+
+[project.scripts]
+specialise = "lldc.scripts.stage1_specialise:main"
+compress_pm = "lldc.scripts.stage2_compress_pm:main"
+compress_vq = "lldc.scripts.stage2_compress_vq:main"
+reconstruct_pm = "lldc.scripts.stage3_reconstruct_pm:main"
+reconstruct_vq = "lldc.scripts.stage3_reconstruct_vq:main"
+evaluate = "lldc.scripts.evaluate_all:main"
+sweeps = "lldc.scripts.sweeps:main"
+
+[tool.setuptools.packages.find]
+include = ["lldc*"]
+exclude = ["tests*", "data*", "configs*", "reports*", "external*", "artifacts*"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+
+[tool.coverage.run]
+branch = true
+
+[dependency-groups]
+dev = [
+    "mypy>=1.17.1",
+    "pytest>=8.4.1",
+    "ruff>=0.12.8",
+]

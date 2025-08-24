@@ -1,0 +1,278 @@
+{
+  "storage": {
+    "Qwen/Qwen2-0.5B-Instruct": {
+      "stored_frac": 0.24,
+      "loss": 0.76,
+      "N": 100,
+      "stored_ci95": [
+        0.16691325556948772,
+        0.33232336349814473
+      ],
+      "oracle_params": {
+        "method": "mc_oracle",
+        "chains": 8,
+        "max_new_tokens": 64,
+        "temperature": 0.9,
+        "top_p": 0.95
+      }
+    },
+    "Qwen/Qwen2-1.5B-Instruct": {
+      "stored_frac": 0.32000000000000006,
+      "loss": 0.6799999999999999,
+      "N": 100,
+      "stored_ci95": [
+        0.23669147324999093,
+        0.41662618610452384
+      ],
+      "oracle_params": {
+        "method": "mc_oracle",
+        "chains": 8,
+        "max_new_tokens": 64,
+        "temperature": 0.9,
+        "top_p": 0.95
+      }
+    },
+    "Qwen/Qwen2-7B-Instruct": {
+      "stored_frac": 0.38,
+      "loss": 0.62,
+      "N": 100,
+      "stored_ci95": [
+        0.29097599252478734,
+        0.47790244704488916
+      ],
+      "oracle_params": {
+        "method": "mc_oracle",
+        "chains": 8,
+        "max_new_tokens": 64,
+        "temperature": 0.9,
+        "top_p": 0.95
+      }
+    }
+  },
+  "retrieval": {
+    "Qwen/Qwen2-0.5B-Instruct": {
+      "gamma1": {
+        "success_frac": 0.24,
+        "success_ci95": [
+          0.16691325556948772,
+          0.33232336349814473
+        ],
+        "success_frac_cond_stored": 1.0,
+        "success_ci95_cond_stored": [
+          0.8620237953250198,
+          1.0
+        ],
+        "stored_N": 24,
+        "total_loss": 0.76,
+        "retrieval_loss": 0.0,
+        "storage_loss": 0.76,
+        "N": 100
+      },
+      "gamma2": {
+        "success_frac": 0.24,
+        "success_ci95": [
+          0.16691325556948772,
+          0.33232336349814473
+        ],
+        "success_frac_cond_stored": 1.0,
+        "success_ci95_cond_stored": [
+          0.8620237953250198,
+          1.0
+        ],
+        "stored_N": 24,
+        "total_loss": 0.76,
+        "retrieval_loss": 0.0,
+        "storage_loss": 0.76,
+        "N": 100
+      },
+      "gamma3": {
+        "success_frac": 0.24,
+        "success_ci95": [
+          0.16691325556948772,
+          0.33232336349814473
+        ],
+        "success_frac_cond_stored": 1.0,
+        "success_ci95_cond_stored": [
+          0.8620237953250198,
+          1.0
+        ],
+        "stored_N": 24,
+        "total_loss": 0.76,
+        "retrieval_loss": 0.0,
+        "storage_loss": 0.76,
+        "N": 100
+      },
+      "gamma_inf": {
+        "success_frac": 0.24,
+        "success_ci95": [
+          0.16691325556948772,
+          0.33232336349814473
+        ],
+        "success_frac_cond_stored": 1.0,
+        "success_ci95_cond_stored": [
+          0.8620237953250198,
+          1.0
+        ],
+        "stored_N": 24,
+        "total_loss": 0.76,
+        "retrieval_loss": 0.0,
+        "storage_loss": 0.76,
+        "N": 100
+      }
+    },
+    "Qwen/Qwen2-1.5B-Instruct": {
+      "gamma1": {
+        "success_frac": 0.33000000000000007,
+        "success_ci95": [
+          0.24563122734128034,
+          0.4269465620490947
+        ],
+        "success_frac_cond_stored": 1.0,
+        "success_ci95_cond_stored": [
+          0.8928208017449293,
+          1.0
+        ],
+        "stored_N": 32,
+        "total_loss": 0.6699999999999999,
+        "retrieval_loss": 0.0,
+        "storage_loss": 0.6799999999999999,
+        "N": 100
+      },
+      "gamma2": {
+        "success_frac": 0.36,
+        "success_ci95": [
+          0.2727122040140433,
+          0.4576459754839126
+        ],
+        "success_frac_cond_stored": 1.0,
+        "success_ci95_cond_stored": [
+          0.8928208017449293,
+          1.0
+        ],
+        "stored_N": 32,
+        "total_loss": 0.64,
+        "retrieval_loss": 0.0,
+        "storage_loss": 0.6799999999999999,
+        "N": 100
+      },
+      "gamma3": {
+        "success_frac": 0.32000000000000006,
+        "success_ci95": [
+          0.23669147324999093,
+          0.41662618610452384
+        ],
+        "success_frac_cond_stored": 1.0,
+        "success_ci95_cond_stored": [
+          0.8928208017449293,
+          1.0
+        ],
+        "stored_N": 32,
+        "total_loss": 0.6799999999999999,
+        "retrieval_loss": 0.0,
+        "storage_loss": 0.6799999999999999,
+        "N": 100
+      },
+      "gamma_inf": {
+        "success_frac": 0.32000000000000006,
+        "success_ci95": [
+          0.23669147324999093,
+          0.41662618610452384
+        ],
+        "success_frac_cond_stored": 1.0,
+        "success_ci95_cond_stored": [
+          0.8928208017449293,
+          1.0
+        ],
+        "stored_N": 32,
+        "total_loss": 0.6799999999999999,
+        "retrieval_loss": 0.0,
+        "storage_loss": 0.6799999999999999,
+        "N": 100
+      }
+    },
+    "Qwen/Qwen2-7B-Instruct": {
+      "gamma1": {
+        "success_frac": 0.39,
+        "success_ci95": [
+          0.3001687400639441,
+          0.4879698295415926
+        ],
+        "success_frac_cond_stored": 0.9210526315789473,
+        "success_ci95_cond_stored": [
+          0.7920062854222853,
+          0.9727854044930122
+        ],
+        "stored_N": 38,
+        "total_loss": 0.61,
+        "retrieval_loss": 0.0,
+        "storage_loss": 0.62,
+        "N": 100
+      },
+      "gamma2": {
+        "success_frac": 0.4099999999999999,
+        "success_ci95": [
+          0.3186731302113651,
+          0.5079856994658921
+        ],
+        "success_frac_cond_stored": 0.9736842105263158,
+        "success_ci95_cond_stored": [
+          0.8650512388404787,
+          0.9953394123142312
+        ],
+        "stored_N": 38,
+        "total_loss": 0.5900000000000001,
+        "retrieval_loss": 0.0,
+        "storage_loss": 0.62,
+        "N": 100
+      },
+      "gamma3": {
+        "success_frac": 0.37,
+        "success_ci95": [
+          0.28182360534324524,
+          0.4677947041905709
+        ],
+        "success_frac_cond_stored": 0.9473684210526315,
+        "success_ci95_cond_stored": [
+          0.8271453786822962,
+          0.9854457918527075
+        ],
+        "stored_N": 38,
+        "total_loss": 0.63,
+        "retrieval_loss": 0.010000000000000009,
+        "storage_loss": 0.62,
+        "N": 100
+      },
+      "gamma_inf": {
+        "success_frac": 0.39,
+        "success_ci95": [
+          0.3001687400639441,
+          0.4879698295415926
+        ],
+        "success_frac_cond_stored": 0.9736842105263158,
+        "success_ci95_cond_stored": [
+          0.8650512388404787,
+          0.9953394123142312
+        ],
+        "stored_N": 38,
+        "total_loss": 0.61,
+        "retrieval_loss": 0.0,
+        "storage_loss": 0.62,
+        "N": 100
+      }
+    }
+  },
+  "storage_betas": [
+    {
+      "beta": 0.5,
+      "loss": 0.76
+    },
+    {
+      "beta": 1.5,
+      "loss": 0.6799999999999999
+    },
+    {
+      "beta": 7.0,
+      "loss": 0.62
+    }
+  ]
+}

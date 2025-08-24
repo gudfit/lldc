@@ -1,0 +1,54 @@
+{
+  "sample_count": 1000,
+  "experiment_5a": {
+    "storage_loss_vs_beta": [
+      {
+        "model": "gpt2",
+        "beta_b": 0.124,
+        "loss": 0.63
+      },
+      {
+        "model": "gpt2-medium",
+        "beta_b": 0.355,
+        "loss": 0.5
+      },
+      {
+        "model": "gpt2-large",
+        "beta_b": 0.774,
+        "loss": 0.35
+      }
+    ],
+    "alpha_s_mod": 0.31524445206032453,
+    "c_s_mod": 0.3361819053323356
+  },
+  "experiment_5b": {
+    "retrieval_loss_vs_gamma": [
+      {
+        "regime": "gamma1",
+        "gamma": 1.0,
+        "loss": 0.47,
+        "total_loss": 0.97
+      },
+      {
+        "regime": "gamma2",
+        "gamma": 2.0,
+        "loss": 0.5,
+        "total_loss": 1.0
+      },
+      {
+        "regime": "gamma3",
+        "gamma": 3.0,
+        "loss": 0.475,
+        "total_loss": 0.975
+      },
+      {
+        "regime": "gamma_inf",
+        "gamma": 1000.0,
+        "loss": 0.47,
+        "total_loss": 0.97
+      }
+    ],
+    "alpha_r_mod": 0.0033811697971747193,
+    "c_r_mod": 0.4821236937164085
+  }
+}

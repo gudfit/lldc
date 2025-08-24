@@ -1,0 +1,6 @@
+key	value
+unigram.entropy_bits_per_token	9.601444391807698
+unigram.avg_token_len_bytes	4.095608693406874
+unigram.entropy_bits_per_byte	2.344326597231845
+ngram.order_6.bpc	1.2236751617602797
+mi.adjacent_token_bits	3.9104073882674752

@@ -1,0 +1,22 @@
+# configs/experiment/e3a_entropy_tradeoff.yaml
+name: e3a_entropy_tradeoff
+defaults:
+  - _self_
+model_groups:
+  mlm: [bert-base-cased, roberta-base, distilroberta-base]
+  ar: [gpt2, gpt2-medium, gpt2-large]
+  baseline: [kenlm_trigram]
+evaluation:
+  domains: [mathematics]
+  reliability_thresholds: [0.0005, 0.001, 0.002, 0.005, 0.01, 0.1, 0.2, 0.3]
+  max_eval_samples: 200
+  prompt_completion_split: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7]
+  kenlm_order: 3
+  kenlm_workdir: artifacts/runs/kenlm_trigram_e3a
+  kenlm_pruning: "0 1 2"
+  kenlm_memory: "30%"
+  kenlm_train_limit: 200
+outputs:
+  results_dir: artifacts/results/e3a_entropy_tradeoff
+  plot_title_prefix: "Experiment 3A:"
+

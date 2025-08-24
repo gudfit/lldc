@@ -1,0 +1,38 @@
+{
+  "kenlm_2gram": {
+    "status": "error: KenLM lmplz failed (order=2). Command '['/usr/local/bin/lmplz', '-o', '2', '--discount_fallback', '--prune', '0', '1', '2', '--temp_prefix', 'artifacts/runs/kenlm_2gram_baseline/tmp', '--memory', '30%']' returned non-zero exit status 1."
+  },
+  "kenlm_3gram": {
+    "bpc": 1.7940667866580229,
+    "cpu_decode_ms": 0.009306193892076823,
+    "status": "ok"
+  },
+  "kenlm_4gram": {
+    "bpc": 1.792486134612843,
+    "cpu_decode_ms": 0.009802291187927461,
+    "status": "ok"
+  },
+  "kenlm_5gram": {
+    "bpc": 1.79234623221989,
+    "cpu_decode_ms": 0.009747124596810059,
+    "status": "ok"
+  },
+  "kenlm_6gram": {
+    "bpc": 1.7923548195916956,
+    "cpu_decode_ms": 0.01000440706604277,
+    "status": "ok"
+  },
+  "zstd_22": {
+    "bpc": 2.3241854915363924,
+    "cpu_decode_ms": 0.0011612494199820112,
+    "status": "ok"
+  },
+  "cmix": {
+    "bpc": 1.5882740027784217,
+    "cpu_decode_ms": 2731467.8427429753,
+    "status": "ok"
+  },
+  "deepzip": {
+    "status": "unavailable: No module named 'deepzip'"
+  }
+}

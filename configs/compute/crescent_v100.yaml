@@ -1,0 +1,19 @@
+name: crescent_v100
+hardware:
+  n_gpus: 1
+  device: auto
+  dtype: fp16
+  grad_checkpointing: true
+  gradient_accumulation: auto
+  max_batch_tokens: auto
+  max_batch_size: auto
+  num_workers: 4
+  compile: false
+accelerate:
+  dispatch_batches: true
+  use_deepspeed: false
+profiling:
+  log_every: 100
+  eval_every_steps: auto
+budget:
+  hours: auto

@@ -1,0 +1,14 @@
+{
+  "500": {
+    "results_path": "/home/ubuntu/lldc1/artifacts/results/exp5c/exp5c_summary_s500.json"
+  },
+  "1000": {
+    "results_path": "/home/ubuntu/lldc1/artifacts/results/exp5c/exp5c_summary_s1000.json"
+  },
+  "2000": {
+    "results_path": "/home/ubuntu/lldc1/artifacts/results/exp5c/exp5c_summary_s2000.json"
+  },
+  "5000": {
+    "results_path": "/home/ubuntu/lldc1/artifacts/results/exp5c/exp5c_summary_s5000.json"
+  }
+}

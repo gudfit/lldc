@@ -1,0 +1,22 @@
+{
+  "dataset": {
+    "name": "wikitext",
+    "config": "wikitext-2-raw-v1",
+    "num_train_samples_used": 36718,
+    "num_test_samples_used": 4358,
+    "total_test_set_chars": 1285622
+  },
+  "unigram": {
+    "entropy_bits_per_token": 10.649483093472629,
+    "avg_token_len_bytes": 4.296168935284686,
+    "entropy_bits_per_byte": 2.4788324793300847
+  },
+  "ngram": {
+    "order_6": {
+      "bpc": 1.7923548195916956
+    }
+  },
+  "mutual_information": {
+    "adjacent_token_bits": 4.984976488531861
+  }
+}

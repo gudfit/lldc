@@ -1,0 +1,69 @@
+name: e1a_wiki103
+
+model_groups:
+  mlm: [roberta-base, bert-base-cased, distilroberta-base]
+  ar: [gpt2, gpt2-medium, gpt2-large]
+
+stage1:
+  apply_to: mlm
+  masking:
+    policy: targeted_dynamic
+    policy_set_fraction: 0.10
+    recompute_each_epoch: true
+    pll_token_scoring: true
+    curriculum:
+      rate_start: 0.2
+      rate_end: 0.8
+      schedule: auto
+  train:
+    epochs: auto
+    lr: auto
+    scheduler: auto
+    warmup_ratio: auto
+    batch_size: ${data.loader.batch_size}
+    gradient_accumulation: ${compute.gradient_accumulation}
+    grad_clip: 1.0
+    save_best: true
+  models: ${model_groups.mlm}
+
+stage2:
+  pm:
+    enabled: true
+    models: ${model_groups.mlm}
+    strategies: [topk_global, entropy_equalisation]
+    mask_rates: [0.2, 0.4, 0.6, 0.8]
+    position_codec: auto
+    arithmetic_coder:
+      enabled: true
+      oracle_model: gpt2-large
+  vq:
+    enabled: true
+    models: ${model_groups.ar}
+    codebook_sizes: [256, 512, 1024, 2048]
+    bottleneck:
+      layer_after: 6
+      shared_codebook: true
+      commitment_beta: 0.25
+    index_lm:
+      type: gru
+      layers: 1
+      hidden_size: 512
+      epochs: 2
+
+stage3:
+  stopping:
+    eos_or_maxlen_margin: 1.05
+
+evaluation:
+  run_efficiency: true
+  run_fidelity: true
+  run_crumpled_paper: true
+
+replication:
+  seeds: auto
+  aggregate: mean_std
+
+outputs:
+  write_rd_curves: true
+  write_tables: true
+  save_payloads: true

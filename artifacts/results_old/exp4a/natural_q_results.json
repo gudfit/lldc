@@ -1,0 +1,203 @@
+{
+  "storage": {
+    "gpt2": {
+      "stored_frac": 0.48,
+      "loss": 0.52,
+      "N": 50
+    },
+    "gpt2-medium": {
+      "stored_frac": 0.72,
+      "loss": 0.28,
+      "N": 50
+    },
+    "gpt2-large": {
+      "stored_frac": 0.7,
+      "loss": 0.30000000000000004,
+      "N": 50
+    },
+    "EleutherAI/pythia-410m": {
+      "stored_frac": 0.56,
+      "loss": 0.43999999999999995,
+      "N": 50
+    },
+    "EleutherAI/gpt-neo-2.7B": {
+      "stored_frac": 0.6,
+      "loss": 0.4,
+      "N": 50
+    }
+  },
+  "retrieval": {
+    "gpt2": {
+      "gamma1": {
+        "success_frac": 0.020000000000000018,
+        "total_loss": 0.98,
+        "retrieval_loss": 0.45999999999999996,
+        "storage_loss": 0.52,
+        "N": 50
+      },
+      "gamma2": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.48,
+        "storage_loss": 0.52,
+        "N": 50
+      },
+      "gamma3": {
+        "success_frac": 0.020000000000000018,
+        "total_loss": 0.98,
+        "retrieval_loss": 0.45999999999999996,
+        "storage_loss": 0.52,
+        "N": 50
+      },
+      "gamma_inf": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.48,
+        "storage_loss": 0.52,
+        "N": 50
+      }
+    },
+    "gpt2-medium": {
+      "gamma1": {
+        "success_frac": 0.040000000000000036,
+        "total_loss": 0.96,
+        "retrieval_loss": 0.6799999999999999,
+        "storage_loss": 0.28,
+        "N": 50
+      },
+      "gamma2": {
+        "success_frac": 0.040000000000000036,
+        "total_loss": 0.96,
+        "retrieval_loss": 0.6799999999999999,
+        "storage_loss": 0.28,
+        "N": 50
+      },
+      "gamma3": {
+        "success_frac": 0.06000000000000005,
+        "total_loss": 0.94,
+        "retrieval_loss": 0.6599999999999999,
+        "storage_loss": 0.28,
+        "N": 50
+      },
+      "gamma_inf": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.72,
+        "storage_loss": 0.28,
+        "N": 50
+      }
+    },
+    "gpt2-large": {
+      "gamma1": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.7,
+        "storage_loss": 0.30000000000000004,
+        "N": 50
+      },
+      "gamma2": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.7,
+        "storage_loss": 0.30000000000000004,
+        "N": 50
+      },
+      "gamma3": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.7,
+        "storage_loss": 0.30000000000000004,
+        "N": 50
+      },
+      "gamma_inf": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.7,
+        "storage_loss": 0.30000000000000004,
+        "N": 50
+      }
+    },
+    "EleutherAI/pythia-410m": {
+      "gamma1": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.56,
+        "storage_loss": 0.43999999999999995,
+        "N": 50
+      },
+      "gamma2": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.56,
+        "storage_loss": 0.43999999999999995,
+        "N": 50
+      },
+      "gamma3": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.56,
+        "storage_loss": 0.43999999999999995,
+        "N": 50
+      },
+      "gamma_inf": {
+        "success_frac": 0.020000000000000018,
+        "total_loss": 0.98,
+        "retrieval_loss": 0.54,
+        "storage_loss": 0.43999999999999995,
+        "N": 50
+      }
+    },
+    "EleutherAI/gpt-neo-2.7B": {
+      "gamma1": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.6,
+        "storage_loss": 0.4,
+        "N": 50
+      },
+      "gamma2": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.6,
+        "storage_loss": 0.4,
+        "N": 50
+      },
+      "gamma3": {
+        "success_frac": 0.020000000000000018,
+        "total_loss": 0.98,
+        "retrieval_loss": 0.58,
+        "storage_loss": 0.4,
+        "N": 50
+      },
+      "gamma_inf": {
+        "success_frac": 0.0,
+        "total_loss": 1.0,
+        "retrieval_loss": 0.6,
+        "storage_loss": 0.4,
+        "N": 50
+      }
+    }
+  },
+  "storage_betas": [
+    {
+      "beta": 0.4,
+      "loss": 0.52
+    },
+    {
+      "beta": 1.0,
+      "loss": 0.28
+    },
+    {
+      "beta": 7.0,
+      "loss": 0.30000000000000004
+    },
+    {
+      "beta": 34.0,
+      "loss": 0.43999999999999995
+    },
+    {
+      "beta": 70.0,
+      "loss": 0.4
+    }
+  ]
+}

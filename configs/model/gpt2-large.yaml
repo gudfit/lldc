@@ -1,0 +1,6 @@
+name: gpt2-large
+arch: ar
+pretrained_name: gpt2-large
+context_length: 1024
+tokenizer: ${.pretrained_name}
+oracle_use: true

@@ -1,0 +1,58 @@
+# @package _global_
+
+name: e2b_channel
+
+experiment:
+  name: e2b_channel
+
+  model_groups:
+    mlm: [roberta-base, bert-base-cased, distilroberta-base]
+    ar: [gpt2, gpt2-medium, gpt2-large]
+
+defaults:
+  - override /data: wikitext-2
+  - override /model: roberta-base
+  - override /eval:
+      - efficiency
+      - fidelity
+      - crumpled_paper
+
+analysis_inputs:
+  from_experiment: e1a_wiki103
+  methods: [pm, vq]
+  models:
+    mlm: ${experiment.model_groups.mlm}
+    ar: ${experiment.model_groups.ar}
+
+deduplication:
+  ngram:
+    n_list: [3, 4, 5]
+    top_k: 10
+  semantic:
+    minhash_bands: 20
+    minhash_rows: 5
+    sbert_model: sentence-transformers/all-mpnet-base-v2
+
+regen_baseline:
+  subsample_every_N: [3, 5, 7]
+  kenlm_pruning: "0 1 2"
+  kenlm_memory: "30%"
+  ngram_model:
+    n: 5
+    smoothing: kneser_ney
+    train_split: train
+
+scaling:
+  dataset_factors: [1, 2, 4, 8, 16, 32]
+  temperature_protocol: fixed_greedy
+
+evaluation:
+  metrics: [fidelity, bpc, bpt, amortised_bpc, tcm, pcm]
+
+replication:
+  seeds: auto
+  aggregate: mean_std
+
+outputs:
+  write_rd_curves: true
+  write_tables: true
